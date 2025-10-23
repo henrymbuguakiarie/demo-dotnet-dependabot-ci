@@ -1,9 +1,9 @@
 version: 2
 updates:
-  - package-ecosystem: "npm" # or pip, maven, etc.
-    directory: "/"
+  - package-ecosystem: "nuget" # For .NET MAUI and other .NET packages
+    directory: "/"             # Root directory of your solution
     schedule:
-      interval: "daily"
+      interval: "daily"        # Can be daily, weekly, or monthly
     open-pull-requests-limit: 5
     labels:
       - "dependencies"
